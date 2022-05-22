@@ -31,7 +31,7 @@ public class Model {
     private static Model instance = null;
     private IMatDataHandler iMatDataHandler;
 
-     private final ArrayList<String> availableCardTypes = new ArrayList<String>(Arrays.asList("MasterCard", "Visa"));
+     // private final ArrayList<String> availableCardTypes = new ArrayList<String>(Arrays.asList("MasterCard", "Visa"));
      private final ArrayList<String> months = new ArrayList<String>(Arrays.asList("1", "2","3", "4", "5", "6"));
      private final ArrayList<String> years = new ArrayList<String>(Arrays.asList("19", "20", "21", "22", "23", "24", "25"));
     /**
@@ -86,10 +86,6 @@ public class Model {
         
         //shoppingCart.addProduct(p);
     }
-
-    public List<String> getCardTypes() {
-        return availableCardTypes;
-    }
     
     public List<String> getMonths() {
         return months;
@@ -133,4 +129,5 @@ public class Model {
     public void shutDown() {
         iMatDataHandler.shutDown();
     }
+
 }

@@ -6,16 +6,20 @@
 package imatmini;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.GridPane;
 import se.chalmers.cse.dat216.project.CartEvent;
 import se.chalmers.cse.dat216.project.CreditCard;
 import se.chalmers.cse.dat216.project.Product;
@@ -27,37 +31,62 @@ import se.chalmers.cse.dat216.project.ShoppingCartListener;
  *
  * @author oloft
  */
-public class iMatMiniController implements Initializable, ShoppingCartListener {
-    
+public class iMatController implements Initializable, ShoppingCartListener {
+
+    private List<Category> mainCategories;
+    public static Cart currentCart;
+
+    /** FrontPage */
+    @FXML private AnchorPane homePage;
+    @FXML private Label categoryText;
+    @FXML private Label subText;
+    @FXML private GridPane categoryGrid;
+    @FXML private Button toFavorites;
+    @FXML private Button toPreviousOrders;
+    @FXML private Button toHomePage;
+    @FXML private Button toGuide;
+    @FXML private Button toDeliveryPane;
+
+    /** Delivery Page */
+    @FXML private AnchorPane deliveryPage;
+    @FXML private Button backButtonD;
+    @FXML private Button forwardButtonD;
+
+    /** Payment Page */
+    @FXML private AnchorPane paymentPage;
+    @FXML private Button backButtonP;
+    @FXML private Button forwardButtonP;
+
+    /** Confirm Order Page */
+    @FXML private AnchorPane confirmOrderPage;
+    @FXML private Button backButtonC;
+    @FXML private Button forwardButtonC;
+
+    private Category bageri = new Category("Bageri");
+    private Category bakning = new Category("Bakning");
+    private Category chark = new Category("Chark");
+    private Category mejeri = new Category("Mejeri");
+    private Category skafferi = new Category("Skafferi");
+    private Category fruktOchGrönt = new Category("Frukt och grönt");
+
+    private List<Category> allCategories = new ArrayList<Category>(Arrays.asList(bageri,bakning, chark, mejeri, skafferi, fruktOchGrönt));
+
     // Shopping Pane
-    @FXML
-    private AnchorPane shopPane;
-    @FXML
-    private TextField searchField;
-    @FXML
-    private Label itemsLabel;
-    @FXML
-    private Label costLabel;
-    @FXML
-    private FlowPane productsFlowPane;
+    @FXML private AnchorPane shopPane;
+    @FXML private TextField searchField;
+    @FXML private Label itemsLabel;
+    @FXML private Label costLabel;
+    @FXML private FlowPane productsFlowPane;
     
     // Account Pane
-    @FXML
-    private AnchorPane accountPane;
-    @FXML 
-    ComboBox cardTypeCombo;
-    @FXML
-    private TextField numberTextField;
-    @FXML
-    private TextField nameTextField;
-    @FXML 
-    private ComboBox monthCombo;
-    @FXML
-    private ComboBox yearCombo;
-    @FXML
-    private TextField cvcField;
-    @FXML
-    private Label purchasesLabel;
+    @FXML private AnchorPane accountPane;
+    @FXML ComboBox cardTypeCombo;
+    @FXML private TextField numberTextField;
+    @FXML private TextField nameTextField;
+    @FXML private ComboBox monthCombo;
+    @FXML private ComboBox yearCombo;
+    @FXML private TextField cvcField;
+    @FXML private Label purchasesLabel;
     
     // Other variables
     private final Model model = Model.getInstance();
@@ -182,12 +211,69 @@ public class iMatMiniController implements Initializable, ShoppingCartListener {
     }
     
     private void setupAccountPane() {
-                
-        cardTypeCombo.getItems().addAll(model.getCardTypes());
         
         monthCombo.getItems().addAll(model.getMonths());
         
         yearCombo.getItems().addAll(model.getYears());
         
+    }
+
+
+    /** Categories */
+    private void populateMainCategoryGrid(){
+        for (int i = 0; i < categoryGrid.getColumnCount(); i++) {
+            for (int j = 0; j < categoryGrid.getRowCount(); j++) {
+                for (int k = 0; k < mainCategories.size(); k++) {
+                    categoryGrid.add(mainCategories.get(k), i, j);
+                }
+            }
+        }
+    }
+
+    private void populateSubCategoryGrid(Category mainCategory){
+        for (int i = 0; i < categoryGrid.getColumnCount(); i++) {
+            for (int j = 0; j < categoryGrid.getRowCount(); j++) {
+                for (int k = 0; k < mainCategory.subCategories.size(); k++) {
+                    categoryGrid.add(mainCategory.subCategories.get(k), i, j);
+                }
+            }
+        }
+    }
+
+    private void toSubcategories(Category mainCategory){
+        populateSubCategoryGrid(mainCategory);
+        categoryText.setText("Hem");
+        //categoryText.setColor(grå) CSS
+        //categoryText.set(understruken)
+        subText.setText(" > " + mainCategory.name);
+        subText.toFront();
+    }
+
+    /** Confirm Order */
+    public static void saveOrder(){
+        PreviousOrders.previousOrders.add(currentCart);
+    }
+
+    /** Open page buttons */
+    public void openFavorites(ActionEvent actionEvent){
+//        favoritesPage.toFront();
+    }
+    public void openStart(ActionEvent actionEvent){
+        homePage.toFront();
+    }
+    public void openGuide(ActionEvent actionEvent){
+//        guidePage.toFront();
+    }
+    public void openOrders(ActionEvent actionEvent){
+//      previousOrdersPage.toFront();
+    }
+    public void openDeliveryPane(ActionEvent actionEvent) {
+        deliveryPage.toFront();
+    }
+    public void openPaymentPane(ActionEvent actionEvent) {
+        paymentPage.toFront();
+    }
+    public void openConfirmPane(ActionEvent actionEvent) {
+        confirmOrderPage.toFront();
     }
 }

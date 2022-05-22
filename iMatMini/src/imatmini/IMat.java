@@ -6,20 +6,26 @@
 package imatmini;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- *
- * @author oloft
- */
-public class IMatMini extends Application {
-    
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class IMat extends Application {
+
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("iMatMini.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("iMat.fxml"));
         
         Scene scene = new Scene(root);
         
@@ -40,5 +46,5 @@ public class IMatMini extends Application {
         }
         }));
     }
-    
+
 }

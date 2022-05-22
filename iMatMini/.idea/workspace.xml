@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41acc449-8deb-482e-a037-bccaa579d7f2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imatmini/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imatmini/CartItem.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imatmini/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imatmini/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imatmini/CategoryGridItem.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imatmini/CategoryGridItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imatmini/PreviousOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imatmini/iMat.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/imatmini/imat_wizard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../imat-dat216.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/imatmini/iMatMini.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/imatmini/iMatMini.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/iMatMini.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/dist/iMatMini.jnlp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iMatMini.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iMatMini.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iMatMini/imatmini/IMatMini$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iMatMini/imatmini/IMatMini.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iMatMini/imatmini/Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iMatMini/imatmini/Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iMatMini/imatmini/iMatMini.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/iMatMini/imatmini/iMatMini.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/iMatMini/imatmini/iMatMiniController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imatmini/IMatMini.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/imatmini/IMat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imatmini/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/imatmini/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imatmini/iMatMini.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/imatmini/iMatMini.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/imatmini/iMatMiniController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/imatmini/iMatController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28z5Uyy61anDCl2Pz4olfDt05Sd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../javafx-sdk-17.0.1/lib" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bookah\Desktop\iMat\imat-dat216\iMatMini\src\imatmini" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.IMat">
+    <configuration name="IMat" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="imatmini.IMat" />
+      <module name="iMatMini" />
+      <option name="VM_PARAMETERS" value="--module-path C:\Users\Bookah\Desktop\javafx-sdk-17.0.1\lib --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IMatMini2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="imatmini.IMat" />
+      <module name="iMatMini" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path C:\Users\natti\Desktop\DIT012\openjfx-17.0.1_windows-x64_bin-sdk\javafx-sdk-17.0.1\lib --add-modules javafx.controls,javafx.fxm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="imatmini.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.IMat" />
+      <item itemvalue="Application.IMatMini2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.IMatMini2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41acc449-8deb-482e-a037-bccaa579d7f2" name="Changes" comment="" />
+      <created>1652206592921</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652206592921</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
