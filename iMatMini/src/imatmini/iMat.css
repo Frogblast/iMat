@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&family=Source+Serif+Pro:wght@200;300&display=swap');
+
+.panels{
+    -fx-background-color: #EAECEA;
+}
+
+.plainText{
+   -fx-font-family: 'Smooch';
+   -fx-font-size: 25px;
+
+}
+.popupPanel{
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-background-color: #FFFFFF;
+}
+
+.searchfield{
+        -fx-background-radius: 30 30 30 30;
+        -fx-border-radius: 30 30 30 30;
+    -fx-font-size: 15px;
+}
+
+.labelSmall{
+   -fx-font-family: 'Smooch', bold;
+   -fx-font-size: 16px;
+}
+
+.labelMedium{
+   -fx-font-family: 'Smooch', bold;
+   -fx-font-size: 22px;
+}
+
+.labelLarge{
+   -fx-font-family: 'Smooch', bold;
+   -fx-font-size: 30px;
+}
+
+.labelExtraLarge{
+   -fx-font-family: 'Smooch', bold;
+   -fx-font-size: 50px;
+}
+
+
+
+.cartItem{
+    -fx-background-color: #E9E8E8;
+        -fx-border-color: #909090 ;
+        -fx-border-width: 2 ;
+    -fx-border-radius: 05 05 05 05;
+    -fx-font-family: 'Smooch', bold;
+
+}
+
+.searchButton{
+    -fx-background-color: #94DAC7;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+   -fx-font-family: 'Smooch';
+
+}
+
+.categoryImage {
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-background-color: #999999;
+}
+
+.buttonsLarge {
+    -fx-background-radius: 45 45 45 45;
+    -fx-border-radius: 45 45 45 45;
+    -fx-background-color: #94DAC7;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+    -fx-font-family: 'Smooch';
+    -fx-font-size: 40px;
+}
+
+.buttonsMedium {
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-background-color: #94DAC7;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+    -fx-font-family: 'Smooch';
+    -fx-font-size: 24px;
+}
+
+.buttonsSmall {
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-background-color: #94DAC7;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+    -fx-font-family: 'Smooch';
+}
+
+.mainframe {
+     -fx-background-color: #FFFFFF;
+}
