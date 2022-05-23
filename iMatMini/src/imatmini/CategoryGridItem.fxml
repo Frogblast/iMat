@@ -4,20 +4,24 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<fx:root prefHeight="249.0" prefWidth="440.0" styleClass="categoryImage" stylesheets="@iMat.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root prefHeight="249.0" prefWidth="440.0" stylesheets="@iMat.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fx:id="categoryImage" fitHeight="195.0" fitWidth="440.0" pickOnBounds="true" styleClass="categoryImage" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fx:id="categoryImage" fitHeight="249.0" fitWidth="440.0" pickOnBounds="true" styleClass="categoryImage">
          <image>
-            <Image url="@ef38f593-e07b-40cd-9888-1f543d20bc90.jpg" />
+            <Image url="@../images/langjast-brod.png" />
          </image>
       </ImageView>
-      <Label fx:id="categoryLabel" alignment="TOP_CENTER" layoutY="195.0" prefHeight="54.0" prefWidth="440.0" text="CategoryLabel" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-         <font>
-            <Font size="34.0" />
-         </font>
-      </Label>
+      <Pane layoutX="90.0" layoutY="175.0" prefHeight="60.0" prefWidth="261.0" styleClass="popupPanel">
+         <children>
+            <Label fx:id="categoryLabel" alignment="CENTER" layoutX="-14.0" layoutY="3.0" prefHeight="54.0" prefWidth="290.0" styleClass="labelLarge" text="CategoryLabel" textAlignment="CENTER">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
    </children>
 </fx:root>

@@ -3,29 +3,27 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="127.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imatmini.CartItem">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="127.0" prefWidth="533.0" styleClass="cartItem" stylesheets="@iMat.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imatmini.CartItem">
     <children>
         <ImageView fx:id="cartItemImage" fitHeight="95.0" fitWidth="141.0" layoutX="11.0" layoutY="11.0" onMouseClicked="#openDetailPane" pickOnBounds="true" preserveRatio="true">
             <image>
             </image>
         </ImageView>
-        <Label fx:id="cartItemName" layoutX="161.0" layoutY="11.0" onMouseClicked="#openDetailPane" text="Kanelbulle">
+        <Label fx:id="cartItemName" layoutX="161.0" layoutY="11.0" onMouseClicked="#openDetailPane" styleClass="labelLarge" text="Kanelbulle">
             <font>
                 <Font size="27.0" />
             </font>
         </Label>
-        <Label fx:id="cartItemPrice" layoutX="161.0" layoutY="56.0" prefHeight="34.0" prefWidth="32.0" text="10 ">
+        <Label fx:id="cartItemPrice" layoutX="161.0" layoutY="56.0" prefHeight="34.0" prefWidth="32.0" styleClass="labelMedium" text="10 ">
             <font>
                 <Font size="23.0" />
             </font>
         </Label>
-        <TextField fx:id="cartItemAmount" layoutX="371.0" layoutY="17.0" prefHeight="75.0" prefWidth="124.0" promptText="Antal" text="1">
+        <TextField fx:id="cartItemAmount" layoutX="371.0" layoutY="17.0" prefHeight="77.0" prefWidth="124.0" promptText="Antal" text="1">
             <font>
                 <Font size="31.0" />
             </font>
@@ -35,7 +33,7 @@
                 <Font size="17.0" />
             </font>
             <graphic>
-                <ImageView fx:id="minusImage" fitHeight="23.0" fitWidth="24.0" onMouseClicked="#decrementQuantity" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="minusImage" fitHeight="20.0" fitWidth="22.0" onMouseClicked="#decrementQuantity" pickOnBounds="true" preserveRatio="true">
                     <image>
                     </image>
                 </ImageView>
@@ -52,8 +50,7 @@
                 </ImageView>
             </graphic>
         </Button>
-        <Line endX="430.5" layoutX="84.0" layoutY="120.0" startX="-72.0" />
-      <Label fx:id="cartItemPrice1" layoutX="193.0" layoutY="57.0" prefHeight="34.0" prefWidth="32.0" text="kr">
+      <Label fx:id="cartItemPrice1" layoutX="205.0" layoutY="56.0" prefHeight="34.0" prefWidth="32.0" styleClass="labelMedium" text="kr">
          <font>
             <Font size="23.0" />
          </font>
